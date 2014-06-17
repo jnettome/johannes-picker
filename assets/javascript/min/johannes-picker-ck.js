@@ -1,1 +1,1 @@
-$(function(){$(".bullet-color").on("click",function(){$(".color-picker").addClass("visible")})});
+$(function(){$(".bullet-color").on("click",function(){$("#color-picker").addClass("visible")}),$("path").on("click",function(){alert("woo")})});

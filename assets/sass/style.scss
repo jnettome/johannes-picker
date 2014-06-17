@@ -50,23 +50,21 @@
     }
   }
 
-  .color-picker {
+  #color-picker {
     position: relative;
     top:50%;
     left:50%;
     margin-top: -15px;
     margin-left: -15px;
-    width: 30px;
-    height: 30px;
-    background: #fff;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    width: 190px;
+    height: 190px;
     border-radius:50%;
-    display: none;
+    // display: none;
     z-index: 2;
 
     &.visible {
       display: block;
-      -webkit-animation: picker-scale 1000ms linear both;
-      animation: picker-scale 1000ms linear both;
+      // -webkit-animation: picker-scale 1000ms linear both;
+      // animation: picker-scale 1000ms linear both;
     }
   }

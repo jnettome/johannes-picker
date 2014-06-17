@@ -1969,20 +1969,15 @@ body {
     -webkit-animation: bounce 1000ms linear both;
     animation: bounce 1000ms linear both; }
 
-.color-picker {
+#color-picker {
   position: relative;
   top: 50%;
   left: 50%;
   margin-top: -15px;
   margin-left: -15px;
-  width: 30px;
-  height: 30px;
-  background: #fff;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 190px;
+  height: 190px;
   border-radius: 50%;
-  display: none;
   z-index: 2; }
-  .color-picker.visible {
-    display: block;
-    -webkit-animation: picker-scale 1000ms linear both;
-    animation: picker-scale 1000ms linear both; }
+  #color-picker.visible {
+    display: block; }
