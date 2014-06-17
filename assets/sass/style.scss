@@ -1,0 +1,72 @@
+// 
+// transitions
+// 
+  @import "transitions.scss";
+
+// 
+// colors
+// 
+  $cyan     :   #1DD4E5;
+
+  
+// 
+// general 
+// 
+
+  body {
+    background-color: #f8f8f8;
+    width: 100% !important;
+    height: 100% !important;
+    padding:0 !important;
+    margin: 0 !important;
+  }
+
+
+// 
+// picker
+// 
+
+  .bullet-color {
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top: -15px;
+    margin-left:-15px;
+    background: $cyan;
+    width: 30px;
+    height: 30px;
+    border-radius:50%;
+    display:block;
+    text-align: center;
+    cursor:hand;
+    cursor: pointer;
+
+    -webkit-animation: bounce-out 1000ms linear both;
+    animation: bounce-out 1000ms linear both;
+
+    &:hover {        
+      -webkit-animation: bounce 1000ms linear both;
+      animation: bounce 1000ms linear both;
+    }
+  }
+
+  .color-picker {
+    position: relative;
+    top:50%;
+    left:50%;
+    margin-top: -15px;
+    margin-left: -15px;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border-radius:50%;
+    display: none;
+    z-index: 2;
+
+    &.visible {
+      display: block;
+      -webkit-animation: picker-scale 1000ms linear both;
+      animation: picker-scale 1000ms linear both;
+    }
+  }
