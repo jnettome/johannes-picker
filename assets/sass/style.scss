@@ -26,6 +26,11 @@
 // picker
 // 
 
+  .picker {
+    // position: relative;
+
+  }
+
   .bullet-color {
     position: absolute;
     top:50%;
@@ -40,31 +45,23 @@
     text-align: center;
     cursor:hand;
     cursor: pointer;
-
-    -webkit-animation: bounce-out 1000ms linear both;
-    animation: bounce-out 1000ms linear both;
-
-    &:hover {        
-      -webkit-animation: bounce 1000ms linear both;
-      animation: bounce 1000ms linear both;
-    }
   }
 
   #color-picker {
     position: relative;
     top:50%;
     left:50%;
-    margin-top: -15px;
-    margin-left: -15px;
+    margin-top: -96px;
+    margin-left: -96px;
     width: 190px;
     height: 190px;
     border-radius:50%;
-    // display: none;
+    display: none;
     z-index: 2;
 
     &.visible {
-      display: block;
-      // -webkit-animation: picker-scale 1000ms linear both;
-      // animation: picker-scale 1000ms linear both;
+      display: block !important;
+      -webkit-animation: bounce 1000ms linear both;
+      animation: bounce 1000ms linear both;
     }
   }

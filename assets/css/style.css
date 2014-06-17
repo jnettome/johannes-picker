@@ -1962,22 +1962,20 @@ body {
   display: block;
   text-align: center;
   cursor: hand;
-  cursor: pointer;
-  -webkit-animation: bounce-out 1000ms linear both;
-  animation: bounce-out 1000ms linear both; }
-  .bullet-color:hover {
-    -webkit-animation: bounce 1000ms linear both;
-    animation: bounce 1000ms linear both; }
+  cursor: pointer; }
 
 #color-picker {
   position: relative;
   top: 50%;
   left: 50%;
-  margin-top: -15px;
-  margin-left: -15px;
+  margin-top: -96px;
+  margin-left: -96px;
   width: 190px;
   height: 190px;
   border-radius: 50%;
+  display: none;
   z-index: 2; }
   #color-picker.visible {
-    display: block; }
+    display: block !important;
+    -webkit-animation: bounce 1000ms linear both;
+    animation: bounce 1000ms linear both; }

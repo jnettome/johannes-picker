@@ -1,1 +1,1 @@
-$(function(){$(".bullet-color").on("click",function(){$("#color-picker").addClass("visible")}),$("path").on("click",function(){alert("woo")})});
+$(function(){$(".bullet-color").on("click",function(){$("#color-picker").attr("class","visible")?$(".list-sort").removeAttr("class"):$("#color-picker").attr("class","visible")}),$("path").on("click",function(){alert($(this).attr("fill"))})});
